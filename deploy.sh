@@ -27,7 +27,12 @@ if [ $2 == "-gm" ]; then
 	fi
 	
 	git checkout master
+<<<<<<< Updated upstream
 	
+=======
+	git merge develop --no-ff
+	git push origin master	
+>>>>>>> Stashed changes
 fi
 
 if [ ! -d "$repo" ]; then
