@@ -23,10 +23,6 @@ if [ $2 == "-gm" ]; then
         	echo "- Description: $5"
 	fi
 
-	if [ ! -d "$repo" ]; then
-        	echo 'Error: .git is not exists. '
-        	exit 4
-	fi
 
 fi
 
