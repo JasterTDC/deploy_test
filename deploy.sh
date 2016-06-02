@@ -1,6 +1,9 @@
 #!/bin/bash
 
 repo=".git"
+gitcm="git checkout master"
+gitmb="git merge develop --no-ff"
+gitpm="git push -u origin master"
 
 if (( $# < 3  )); then
 	echo 'At least the command needs 3 parameters. '
@@ -22,8 +25,9 @@ if [ $2 == "-gm" ]; then
 
         	echo "- Description: $5"
 	fi
-
-
+	
+	git checkout master
+	
 fi
 
 if [ ! -d "$repo" ]; then
